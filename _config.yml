@@ -1,6 +1,6 @@
 # Site settings
 title_left    : "Think"
-title_right   : "不周山" # default: ""
+title_right   : " 不周山" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Blog, Python, Flask, MIS, SEO, blog, web, minimalist, thinkspace"
 url           : https://bzsapp.github.io # site url
