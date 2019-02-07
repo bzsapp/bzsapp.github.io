@@ -2,7 +2,7 @@
 # 文章常用yaml定义 #
 layout: post                 # 调用_layouts下面的某一个模板
 author: "sh"                 #文章作者      
-title: git命令基本使用方法    #文章标题
+title: git,markdown命令基本使用方法    #文章标题
 published: true              # 该文章是否需要发布
 tags: ["tag-1", "tag-2", "tag-3"]  # 标签
 categories: ["第1章"]          # 分类
