@@ -40,7 +40,7 @@ $ git config --global user.email test@runoob.commit
   - 厚德载物
     * 不惜名，莫嫌仇，不吝财，人皆堪驭也
     * 这样，懂得为他人创造价值，人际关系才能持久，才是真正社交
-* Push it
+## Push it ##
 * Add, commit, and push your changes:
 * 使用 git add 命令将所有修改的文件写入缓存区， 而执行 git commit 将缓存区内容添加到本地仓库。
 * git push 将本地仓库的修改推送到远程仓库
@@ -50,7 +50,7 @@ $ git config --global user.email test@runoob.commit
 | anka        |        Anka/Coder       |  a=5-1   |
 | anonymous   |      Anonymous Pro      |   b=5+3  |
 
-删除所以文件和文件夹
+## 删除所以文件和文件夹 ##
 ```
 $ git rm * -r
 ```
