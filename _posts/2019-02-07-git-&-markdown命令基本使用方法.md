@@ -14,9 +14,11 @@ permalink: /about22/         # 来定义你最终的文章链接是什么形式
 
 ## Go to the folder where you want to ##
 store your project, and clone the new repository:
+
 $$
 x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
+
 使用 git clone 拷贝一个 Git 仓库到本地[^1]，让自己能够查看该项目，或者进行修改。
 如果你需要与他人合作一个项目，或者想要复制一个项目，看看代码，你就可以克隆那个项目。 执行命令：
 ```python
