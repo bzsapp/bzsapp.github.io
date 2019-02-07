@@ -15,7 +15,7 @@ postshare_enabled : false
 
 # Build settings
 permalink   : /:year/:title/
-markdown    : redcarpet       # 默认解释器kramdown
+markdown    : kramdown       # 默认解释器kramdown
 highlighter : rouge
 
 source      : ./
