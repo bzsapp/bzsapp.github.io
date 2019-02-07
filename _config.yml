@@ -1,6 +1,6 @@
 # Site settings
 title_left    : "Think"
-title_right   : "space" # default: ""
+title_right   : "不周山" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
 url           : https://heiswayi.github.io/thinkspace # site url
@@ -38,8 +38,8 @@ plugins:
 # navbar pages
 navbar:
   - slug : about
-    title: About
-  - slug : blog
-    title: Blog
+    title: About755
+  - slug : blog77
+    title: Blog787
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
