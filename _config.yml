@@ -1,8 +1,8 @@
 # Site settings
 title_left    : "Think"
-title_right   : " space" # default: ""
+title_right   : "space" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
-keywords      : "Blog, Python, Flask, MIS, SEO, blog, web, minimalist, thinkspace"
+keywords      : "Blog, Python, Flask, MIS, SEO, AI, web, minimalist, thinkspace"
 url           : https://bzsapp.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
@@ -38,8 +38,8 @@ plugins:
 # navbar pages
 navbar:
   - slug : about
-    title: About755
+    title: About75
   - slug : blog77
-    title: Blog87
+    title: Blog88
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
