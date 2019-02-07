@@ -4,5 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
-shif自我介绍
+自我介绍：
+    Hi, I'm SH. I do stuffs with computer and sometimes write about it here.
+      I'm from Yuxi, China, and I ship code at <a href="#">BZS</a>.</p>
