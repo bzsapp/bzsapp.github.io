@@ -3,9 +3,9 @@ title_left    : "Think"
 title_right   : "space" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Blog, Python, Flask, MIS, SEO, AI, web, minimalist, thinkspace"
-url           : https://bzsapp.github.io # site url
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+url           : https://bzsapp.github.io  # site url
+baseurl       : ""  # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : ""  # image uri like logo/cover image for site seo
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
