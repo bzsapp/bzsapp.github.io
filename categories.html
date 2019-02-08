@@ -30,10 +30,10 @@ layout: page
 //输出该篇文章里的tag
 {% capture tags %}
    {% for tag in site.tags %}
-    {{tag[0]}}
+    {{_article.url}}
    {% endfor %}
 {% endcapture %}
 //<h4>{{window.location.hash}}</h4>
 {%- assign _tag_encode = _tag | strip | url_encode -%}
- <h4>{{site.baseurl}}</h4> tag
+ <h4>{{_article.url}}</h4> tag
 
