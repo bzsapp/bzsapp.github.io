@@ -28,7 +28,7 @@ layout: page
 {% endfor %}
 
 //输出该篇文章里的tag
-   //<h4>{{window.location.hash}}</h4>
+//<h4>{{window.location.hash}}</h4>
 {% for tag in site.tags %}
-  //<h4>{{tag}}</h4>
+    <h4>{{tag[0]}}</h4>
 {% endfor %}
