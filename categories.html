@@ -28,13 +28,7 @@ layout: page
 {% endfor %}
 
 //输出该篇文章里的tag
-{% capture tags %}
-   {% for tag in site.tags %}
-    {{_article.url}}
-   {% endfor %}
-{% endcapture %}
-//<h4>{{window.location.hash}}</h4>
-
  <h4>{{site.url}}</h4> <br>
  {{page.url}}  <br>
- {{page.path}}
+ {{page.path}} <br>
+{{post.url}} <br>
