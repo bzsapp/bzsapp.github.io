@@ -29,7 +29,6 @@ layout: page
 
 //输出该篇文章里的tag
    //<h4>{{window.location.hash}}</h4>
-<script type="text/javascript">
-  document.write(location.hash); //内容用""括起来，""里的内容直接输出。
-   document.write(location.search);
-</script>
+{% for tag in site.tags %}
+  //<h4>{{tag}}</h4>
+{% endfor %}
