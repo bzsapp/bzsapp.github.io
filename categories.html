@@ -28,7 +28,9 @@ layout: page
 {% endfor %}
 
 //输出该篇文章里的tag
+{% capture tags %}
+{% for tag in site.tags %}
 //<h4>{{window.location.hash}}</h4>
 {%- assign _tag_encode = _tag | strip | url_encode -%}
- <h4>{{site.baseurl}}</h4>
+ <h4>{{site.baseurl}}</h4> tag
 
