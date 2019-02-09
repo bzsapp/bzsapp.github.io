@@ -26,7 +26,7 @@ layout: page
     {% for category in site.categories %}
     <li><a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} {{ category | last | size }}</a>
     </li>
-    {% endfor %\}
+    {% endfor %}
 </ul>
 //输出指定分类的所有文章
 {% for post in site.categories.['Python'] %}
