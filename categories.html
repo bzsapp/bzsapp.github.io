@@ -14,7 +14,13 @@ layout: page
 
 <br>
 //----法2------
-
+<h3>Category</h3>
+<ul>
+    {% for category in site.categories %}
+        <li><a href="/categories/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
+        </li>
+    {% endfor %}
+</ul>
 
 <ul>
     {% for category in site.categories %}
@@ -31,7 +37,5 @@ layout: page
  <h4>{{site.url}}</h4> <br>
  {{page.url}}  <br>
  {{page.path}} <br>
-<script>
-   document.write(getQueryString("tag"));
-</script>
+
 
