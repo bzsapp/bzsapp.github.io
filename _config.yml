@@ -9,7 +9,6 @@ cover         : ""  # image uri like logo/cover image for site seo
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
-filter: 'tag'    # shif added
 
 google_analytics  : UA-XXXXX-XX
 twitter_username  : ""
