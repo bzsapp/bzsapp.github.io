@@ -8,28 +8,5 @@ category: "Python"
 {% endfor %}
 
 <script>
-    
-{% for category in site.categories %}
-    <h3>{{ category | first }} <span>({{ category | last | size }}篇)</span> </h3>  
-    <ul class="arc-list">
-        {% for post in category.last %}
-            <li>{{ post.date | date:"%Y-%m-%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-{% endfor %}
-
-    var dataStr = '{ {% for cat in site.categories %}
-                         {% if cat[0] != site.categories.first[0] %},
-                             {% endif %}
-                            "{{ cat[0] }}":[
-                                {% for post in cat[1] %}
-                                   {% if post != cat[1].first %}, {% endif %}
-                                   {"url":"{{post.url}}", 
-                                   "title":"{{post.title}}",
-                                   "date":"{{post.date | date:"%d/%m/%Y"}}"}
-                              {% endfor %}]
-                      {% endfor %} }',
-    data = JSON.parse(dataStr),
-    curTag = getQueryString("cat");
-    archieves = data[curTag];
+    document.write(getQueryString("cat"));
 </script>
