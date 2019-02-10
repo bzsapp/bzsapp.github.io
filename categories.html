@@ -1,6 +1,5 @@
 ---
 layout: page
-category: "第1章"
 ---
 
 //----法1-----
@@ -14,11 +13,11 @@ category: "第1章"
 {% endfor %}
 
 <br>
-//----法2------
+//----法2------categories
 <h3>CategoryLists</h3>
 <ul >
     {% for category in site.categories %}
-        <li><a href="/categories/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
+        <li><a href="/category_index.html/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
         </li>
     {% endfor %}
 </ul>
