@@ -24,7 +24,7 @@ function getQueryString(paramName) {
 {% endfor %}
 
 <br>
-//====法2=====categories
+//=====法2=====categories
 <h3>CategoryLists</h3>
 <ul >
     {% for category in site.categories %}
@@ -33,7 +33,7 @@ function getQueryString(paramName) {
     {% endfor %}
 </ul>
 
-<p>输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup></p>
+输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup>
 {% for post in site.categories.[page.category] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
@@ -42,7 +42,7 @@ function getQueryString(paramName) {
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 
-//输出该篇文章里的tag<br>
+//=====输出该篇文章里的tag<br>
  {{site.url}}  <br>
  {{page.url}}  <br>
  {{ page.category }} <br>
