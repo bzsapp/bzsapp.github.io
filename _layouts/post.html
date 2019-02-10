@@ -4,7 +4,6 @@ layout: default
 
 <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    {% for category in page.categories  %} {{category}} {% endfor %}
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} &middot; 
                          {% for category in page.categories  %} {{category}} {% endfor %} </p>
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
