@@ -30,7 +30,7 @@ function getQueryString(paramName) {
 <h3>CategoryLists</h3>
 <ul >
     {% for category in site.categories %}
-        <li><a href="/categories/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
+        <li><a href="/category_show.html/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
         </li>
     {% endfor %}
 </ul>
