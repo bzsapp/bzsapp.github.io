@@ -22,7 +22,7 @@ layout: page
     {% endfor %}
 </ul>
 
-{% for post in site.categories.[page.category] %}
+{% for post in site.categories.['Python'] %}
     {{ post.date }} {{ post.title }}
 {% endfor %}
 <p>输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup></p>
