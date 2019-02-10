@@ -15,7 +15,7 @@ layout: page
 <br>
 //----法2------
 <h3>CategoryLists</h3>
-<ul>
+<ul >
     {% for category in site.categories %}
         <li><a href="/categories/{{ category | first }}/" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
         </li>
@@ -24,7 +24,7 @@ layout: page
 
 
 <p>输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup></p>
-{% for post in site.categories.[page.category %}
+{% for post in site.categories.[page.category] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 -----------------------------
