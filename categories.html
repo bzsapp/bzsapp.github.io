@@ -17,9 +17,6 @@ function getParam(paramName) {
     return paramValue == "" && (paramValue = null), paramValue 
 } 
 	
- // 获取指定的URL参数值 
- // URL:http://www.quwan.com/index?name=tyler 
- // 参数：paramName URL参数 
 function getQueryString(paramName) { 
 	  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
 	  var r = window.location.search.substr(1).match(reg); 
