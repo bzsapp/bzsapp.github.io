@@ -3,9 +3,9 @@ layout: page
 ---
 
 <Script language="javascript">
- * 获取指定的URL参数值 
- * URL:http://www.quwan.com/index?name=tyler 
- * 参数：paramName URL参数 
+ // 获取指定的URL参数值 
+ // URL:http://www.quwan.com/index?name=tyler 
+ // 参数：paramName URL参数 
 function getQueryString(paramName) { 
 	  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
 	  var r = window.location.search.substr(1).match(reg); 
@@ -13,7 +13,7 @@ function getQueryString(paramName) {
 }
 </Script>
 
-//----法1-----
+//=====法1=====
 {% for category in site.categories %}
     <h3>{{ category | first }} <span>({{ category | last | size }}篇)</span> </h3>  
     <ul class="arc-list">
@@ -24,7 +24,7 @@ function getQueryString(paramName) {
 {% endfor %}
 
 <br>
-//----法2------categories
+//====法2=====categories
 <h3>CategoryLists</h3>
 <ul >
     {% for category in site.categories %}
@@ -33,12 +33,11 @@ function getQueryString(paramName) {
     {% endfor %}
 </ul>
 
-
 <p>输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup></p>
 {% for post in site.categories.[page.category] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
------------------------------
+//==================================
 {% for post in site.categories.['Python'] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
