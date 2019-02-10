@@ -2,9 +2,8 @@
 layout: page
 ---
 
-//=====法1=====
 {% for category in site.categories %}
-    <h3>{{ category | first }} <span>({{ category | last | size }}篇)</span> </h3>  
+    <h3>{{ category | first }} <span>({{ category | last | size }})</span> </h3>  
     <ul class="arc-list">
         {% for post in category.last %}
             <li>{{ post.date | date:"%Y-%m-%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -13,16 +12,17 @@ layout: page
 {% endfor %}
 
 <br>
+
+
 //=====法2=====categories
 <h3>CategoryLists</h3>
 <ul >
     {% for category in site.categories %}
-        <li><a href="/categories/{{ category | first }}" title="查看所有文章">{{ category | first }} ({{ category | last | size }})</a>
+        <li><a href="/categories/{{ category | first }}/" title="查看所有文章">{{ category | first }} <sup>({{ category | last | size }})</sup></a>
         </li>
     {% endfor %}
 </ul>
 
-输出指定分类的所有文章<sup>(与上面法2关联).[page.category]</sup>
 {% for post in site.categories.[page.category] %}
     <li>{{ post.date | date:"%Y-%m-%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
