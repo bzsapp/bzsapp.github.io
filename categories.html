@@ -22,22 +22,6 @@ layout: page
     {% endfor %}
 </ul>
 
---------------
-<h4>Category</h4>
-<ul>
-    {% for category in site.categories %}
-        <li><a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} {{ category | last | size }}</a>
-        </li>
-    {% endfor %}
-</ul>
-
-<ul>
-    {% for category in site.categories %}
-    <li><a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} {{ category | last | size }}</a>
-    </li>
-    {% endfor %}
-</ul>
-
 //输出指定分类的所有文章
 {% for post in site.categories.['Python'] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
