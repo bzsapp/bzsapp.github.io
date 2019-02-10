@@ -3,7 +3,7 @@ layout: page
 ---
 
 {% for category in site.categories %}
-    <h3>{{ category | first }} <span>({{ category | last | size }})</span> </h3>  
+    <h3>{{ category | first }} <sup>({{ category | last | size }})</sup> </h3>  
     <ul class="arc-list">
         {% for post in category.last %}
             <li>{{ post.date | date:"%Y-%m-%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
