@@ -2,6 +2,18 @@
 layout: page
 ---
 
+<Script language="javascript">
+/** 
+ * 获取指定的URL参数值 
+ * URL:http://www.quwan.com/index?name=tyler 
+ * 参数：paramName URL参数 
+function getQueryString(paramName) { 
+	  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+	  var r = window.location.search.substr(1).match(reg); 
+	  if (r != null) return decodeURI(r[2]); return null; 
+}
+</Script>
+
 //----法1-----
 {% for category in site.categories %}
     <h3>{{ category | first }} <span>({{ category | last | size }}篇)</span> </h3>  
