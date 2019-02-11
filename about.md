@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /aboutMe/
 ---
 
 &ensp;&ensp; Hi, I'm SH. I do stuffs with computer and sometimes write about it here.
