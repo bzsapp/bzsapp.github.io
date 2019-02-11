@@ -2,7 +2,6 @@
 layout: page
 ---
 
-  <div class="container">
     {% for post in site.posts %}
       {% unless post.next %}
         <h3 class="category-title">{{ post.date | date: '%Y' }}</h3>
@@ -18,5 +17,3 @@ layout: page
         <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
       </article>
     {% endfor %}
-  </div>
-
