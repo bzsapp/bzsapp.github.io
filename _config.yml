@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "Think"
-title_right   : "space" # default: ""
+title_left    : "Thinkspace"
+title_right   : "@BZS" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Blog, Python, Flask, MIS, SEO, AI, web, minimalist, thinkspace"
 url           : https://bzsapp.github.io  # site url
