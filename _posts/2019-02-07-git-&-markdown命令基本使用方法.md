@@ -5,10 +5,11 @@ author: "sh"                 #文章作者
 title: git,markdown命令基本使用方法    #文章标题
 published: true              # 该文章是否需要发布
 categories: ["python", "MIS","markdown"]      # 分类
-tags: ["tag-1","tag-2","tag-3"]   # 标签
-permalink: /about22/         # 来定义你最终的文章链接是什么形式
-
+tags: ["tag-1","tag-2","tag-3"]    # 标签
+permalink: /:title/think-bzs       # 来定义你最终的文章链接是什么形式
 ---
+
+正文区域：
 
 [TOC]
 
