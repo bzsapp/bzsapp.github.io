@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<section class="post-list">
+<section class="post-list777">
   <div class="container">
     {% for post in site.posts %}
       {% unless post.next %}
@@ -14,9 +14,9 @@ layout: page
           <h3 class="category-title">{{ post.date | date: '%Y' }}</h3>
         {% endif %}
       {% endunless %}
-      <article class="post-item">
+      <article class="post-item777">
         <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
-        <div class="article-title"><a class="shif" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
+        <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
       </article>
     {% endfor %}
   </div>
