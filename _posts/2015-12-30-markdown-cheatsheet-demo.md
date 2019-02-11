@@ -5,6 +5,7 @@ comments: true
 category: "markdown"
 description: "Markdown Cheatsheet Demo..."
 keywords: "markdown, typography components, dummy content"
+date: 2018-9-10
 ---
 
 ## Typography Elements in One
