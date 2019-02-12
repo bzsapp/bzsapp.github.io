@@ -7,25 +7,37 @@ title: Home
 
 <section class="post-list">
   <div class="container">
-    {% for post in site.posts limit:5 %}
-      {% unless post.next %}
-        <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
-        {% assign count = 0 %}
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
+<!--{% for post in site.posts limit:5 %}   #直接用limit现在前5篇文章-->
+    {% for post in site.posts %}
+       {% unless post.next %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
-          {% assign count = 0 %}
-        {% endif %}
-      {% endunless %}
-      <article class="post-item">
-        <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
-        <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
-      </article>
-       {% assign count = count | plus:1 %}
-       <br>{{ count }}
-       &nbsp;&nbsp;&nbsp;{{ forloop.index }}
+          {% assign yearcnt = 1 %}
+          {% assign postcnt = 0 %}
+       {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+             <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
+             {% assign yearcnt = yearcnt | plus:1 %}
+             {% assign postcnt = 0 %}
+          {% endif %}
+       {% endunless %}
+    
+       {% assign postcnt = postcnt | plus:1 %}
+       {% if yearcnt == 1  and postcnt <=5 %}
+          <article class="post-item">
+          <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
+          <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
+          </article>
+       {% endfor %}
+       {% if yearcnt == 2  and postcnt <=1 %}
+          <article class="post-item">
+          <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
+          <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
+          </article>
+       {% endfor %}
+       <!-- 以为为输出调试 -->
+       <br>{{ yearcnt }} &nbsp;&nbsp;{{ postcnt }}&nbsp;&nbsp; {{ forloop.index }}
     {% endfor %}
   </div>
 
