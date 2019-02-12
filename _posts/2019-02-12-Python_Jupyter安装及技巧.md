@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: Python Jupyter安装
+published: true              # 该文章是否需要发布
+categories: ["python","markdown"]
+---
 ### Python_Jupyter安装
 安装搭建Python jupyter环境参考网址：
 <https://www.cnblogs.com/postgres/p/6926198.html>
