@@ -7,7 +7,7 @@ title: Home
 
 <section class="post-list">
   <div class="container">
-
+<!-- {% for post in site.posts limit:5 %}  #直接用limit现在前5篇文章 -->
     {% for post in site.posts %}
        {% unless post.next %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
@@ -47,7 +47,6 @@ title: Home
        <!-- 下行为输出调试 -->
        <!-- <br>{{ yearcnt }} &nbsp;&nbsp;{{ postcnt }}&nbsp;&nbsp; {{ forloop.index }}  -->
     {% endfor %}
-sadfasdfd ssdf
 
   </div>
 </section>
