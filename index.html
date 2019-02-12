@@ -24,21 +24,22 @@ title: Home
        {% endunless %}
     
        {% assign postcnt = postcnt | plus:1 %}
-       {% if yearcnt == 1  and postcnt <=5 %}
+       {% if yearcnt == 1 and postcnt <=5 %}
           <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
           </article>
        {% endif %}
-       {% if yearcnt == 2  and postcnt <=1 %}
+       {% if yearcnt == 2 and postcnt <=1 %}
           <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
           </article>
        {% endif %}
-       <!-- 以为为输出调试 -->
+       <!-- 下行为输出调试 -->
        <br>{{ yearcnt }} &nbsp;&nbsp;{{ postcnt }}&nbsp;&nbsp; {{ forloop.index }}
     {% endfor %}
+sadfasdfd ssdf
   </div>
 
 </section>
