@@ -19,27 +19,33 @@ title: Home
           {% if year != nyear %}
              {% assign yearcnt = yearcnt | plus:1 %}
              {% assign postcnt = 0 %}
-             {% if yearcnt <=2 %}
+             {% if yearcnt <=3 %}    <!--这里<=3要与下面3个if yearcnt == 的语句数量对应 -->
                 <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
              {% endif %}
           {% endif %}
        {% endunless %}
     
        {% assign postcnt = postcnt | plus:1 %}
-       {% if yearcnt == 1 and postcnt <=5 %}
+       {% if yearcnt == 1 and postcnt <=7 %}
           <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
           </article>
        {% endif %}
-       {% if yearcnt == 2 and postcnt <=1 %}
+       {% if yearcnt == 2 and postcnt <=2 %}
+          <article class="post-item">
+          <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
+          <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
+          </article>
+       {% endif %}
+       {% if yearcnt == 3 and postcnt <=1 %}
           <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
           </article>
        {% endif %}
        <!-- 下行为输出调试 -->
-       <br>{{ yearcnt }} &nbsp;&nbsp;{{ postcnt }}&nbsp;&nbsp; {{ forloop.index }}
+       <!-- <br>{{ yearcnt }} &nbsp;&nbsp;{{ postcnt }}&nbsp;&nbsp; {{ forloop.index }}  -->
     {% endfor %}
 sadfasdfd ssdf
 
