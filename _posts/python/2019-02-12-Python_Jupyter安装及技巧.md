@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Jupyter notebook安装
-published: true              # 该文章是否需要发布
 categories: ["python","markdown"]
+published: true              # 该文章是否需要发布
 ---
 
 ### Python_Jupyter安装
