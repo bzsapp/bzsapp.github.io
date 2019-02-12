@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Python Jupyter安装
+title: Jupyter notebook安装
 published: true              # 该文章是否需要发布
 categories: ["python","markdown"]
 ---
+
 ### Python_Jupyter安装
-安装搭建Python jupyter环境参考网址：
-<https://www.cnblogs.com/postgres/p/6926198.html>
-<br>  
+
 如何安装并设置Jupyter登录密码：
 2. 安装：pip install jupyter
 3. 生成jupyter的配置文件：jupyter notebook --generate-config （注:生成的配置文件名为jupyter_notebook_config.py）
