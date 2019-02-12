@@ -7,7 +7,8 @@ title: Home
 
 <section class="post-list">
   <div class="container">
-<!-- {% for post in site.posts limit:5 %}  #直接用limit现在前5篇文章 -->
+<!--#直接用for语句的limit现在前5篇文章
+    #项目代码控制仅显示最近3年的文章，且最多显示的文章数依次为7,2,1篇-->
     {% for post in site.posts %}
        {% unless post.next %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
