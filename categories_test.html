@@ -51,7 +51,9 @@ function getQueryString(paramName) {
   {% assign page.category = 'shif20999'%}
  {{ page.category }} <br>
  {{page.path}} <br>
- 
+
+
+{% capture catPram %} <h2>shif color</h2>->getQueryString("cat") {% endcapture %}
 <script>
 	document.write("shif999<br>");
    document.write(getQueryString("cat"));
