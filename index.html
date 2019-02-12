@@ -7,7 +7,7 @@ title: Home
 
 <section class="post-list">
   <div class="container">
-
+{% comment %}  {% for post in site.posts limit:5 %}  <!--直接用limit现在前5篇文章--> {% endcomment %} 
     {% for post in site.posts %}
        {% unless post.next %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
@@ -17,9 +17,11 @@ title: Home
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
           {% if year != nyear %}
-             <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
              {% assign yearcnt = yearcnt | plus:1 %}
              {% assign postcnt = 0 %}
+             {% if yearcnt <=2 %}
+                <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
+             {% endif %}
           {% endif %}
        {% endunless %}
     
