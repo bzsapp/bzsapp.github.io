@@ -16,7 +16,7 @@ function getQueryString(paramName) {
 }
 </Script>
 
-{%- capture prmcat %}<script>document.write(getQueryString("cat"));</script> {% endcapture -%}
+{%- capture prmcat %}<script>document.write(getQueryString("cat"));</script>{% endcapture -%}
 <h3>999{{ prmcat }}999 </h3>
 {% assign prm1 = prmcat %}
 {% for post in site.categories.[prm1] %}
