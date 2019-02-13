@@ -21,8 +21,7 @@ function getQueryString(paramName) {
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 
-{% capture catPram %} url cat参数值是: <script>document.write(getQueryString("cat"));</script>{% endcapture %}
-{{catPram}}<br>
+rl cat参数值是: {{catPram}}<br>
 <script>
     document.write(getQueryString("cat"));
 </script>
