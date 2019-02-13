@@ -9,6 +9,16 @@ layout: page
 }
 </style>
 
+<ul class="tags-list">
+<li>
+    {% if site.recommend-tags and site.tags.size>0 %}
+         {% for tag in site.tags %}
+            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+         {% endfor %}
+    {% endif %}
+</li>
+</ul>
+
 {% for category in site.categories %}
 <h3>{{ category | first }} <sup><span class="tag_count">({{ category | last | size }})</span></sup> </h3>  
     <ul class="arc-list">
