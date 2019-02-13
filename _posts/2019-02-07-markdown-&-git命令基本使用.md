@@ -2,7 +2,7 @@
 # 文章常用yaml定义 #
 layout: post                 # 调用_layouts下面的某一个模板
 author: "sh"                 #文章作者      
-title: git,markdown命令基本使用方法    #文章标题
+title: Markdown and git命令基本使用测试    #文章标题
 published: true              # 该文章是否需要发布
 categories: ["python", "MIS","markdown"]      # 分类
 tags: ["tag-1","tag-2","tag-3"]    # 标签
@@ -39,10 +39,10 @@ Git 为你的每一个提交都记录你的名字与电子邮箱地址，所以�
 $ git config --global user.name 'runoob'
 $ git config --global user.email test@runoob.commit
 ```
-+ [ ] 厚德载物
-+ [x] 上善若水
++ [x] 厚德载物
++ [ ] 上善若水
   - 厚德载物
-    * 不惜名，莫嫌仇，不吝财，人皆堪驭也
+    * 不惜名，莫嫌仇，不吝财，人皆堪用也
     * 这样，懂得为他人创造价值，人际关系才能持久，才是真正社交
 
 ## Push it ##
@@ -60,4 +60,4 @@ $ git config --global user.email test@runoob.commit
 $ git rm * -r
 ```
 
-[^1]: 参考文献：sadfasdf ,today china.
+[^1]: 参考文献：shanghairef ,today china.
