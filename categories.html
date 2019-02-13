@@ -10,14 +10,6 @@ layout: page
 </style>
 
 
-<ul class="tags-list">
-<li>
-     {% for category in site.categories %}
-        <a href="#{{ category }}" class="tag">{{ category }}</a>
-     {% endfor %}
-</li>
-</ul>
-
 {% for category in site.categories %}
 
   <h3>{{ category | first }} <sup><span class="tag_count">({{ category | last | size }})</span></sup> </h3>  
