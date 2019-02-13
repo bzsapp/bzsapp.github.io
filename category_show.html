@@ -17,8 +17,7 @@ function getQueryString(paramName) {
 </Script>
 
 {% capture catPram %}'<script>document.write(getQueryString("cat"));</script>' {% endcapture %}
-{% assign catpram="python" %}
-{{catpram}}
+<h3>{{ catPram }} </h3>  
 {% for post in site.categories.[catpram] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
