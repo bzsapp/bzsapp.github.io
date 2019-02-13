@@ -16,15 +16,15 @@ function getQueryString(paramName) {
 }
 </Script>
 
-{% capture prm_cat %}<script>document.write(getQueryString("cat"));</script> {% endcapture %}
-<h3>{{ prm_cat }} </h3>
+{% capture prmcat %}<script>document.write(getQueryString("cat"));</script> {% endcapture %}
+<h3>{{ prmcat }} </h3>
 {% assign prm1 = "python" %}
-{% for post in site.categories.[prm_cat] %}
+{% for post in site.categories.[prmcat] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 
 <!-- 以下几行为输出调试 -->
-URL cat参数值是: {{ prm_cat }}<br>
+URL cat参数值是77: {{ prmcat }}<br>
 <script>
     document.write(getQueryString("cat"));
 </script>
