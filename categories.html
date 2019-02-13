@@ -11,11 +11,10 @@ layout: page
 
 <ul class="tags-list">
 <li>
-    {% if site.recommend-tags and site.tags.size>0 %}
-         {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-         {% endfor %}
-    {% endif %}
+     {% for tag in site.categories %}
+        <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+     {% endfor %}
+
 </li>
 </ul>
 
