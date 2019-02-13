@@ -7,6 +7,15 @@ layout: page
  color: #9A9;       /*文字颜色*/
  font-size: 16px;   /*font-size文字大小*/
 }
+ 
+   .anchor-list{padding:40px 0}
+  .anchor-list li{list-style:none; padding:30px 20px; background-color:#fff; border:1px solid #e7eaf1; border-radius:3px;
+	box-sizing:border-box; box-shadow:0 1px 3px rgba(0,37,55,.06); margin-bottom:12px}
+  .anchor-list li:first-child{margin-bottom:24px;cursor:default}
+  .anchor-list li .tag{box-shadow:0 0 .3px #bfc2c6;margin-bottom:12px}
+  .anchor-list li .tag-name{display:block;font-size:20px;color:#333;text-align:center;margin-bottom:20px}
+  .anchor-list li .tag-post{display:block;font-size:16px;color:#666;text-align:center;margin:16px auto}
+  .anchor-list li .tag-post:hover{color:#000}
 </style>
 
 <ul class="anchor-list">
@@ -18,7 +27,7 @@ layout: page
 </ul>
 
 {% for category in site.categories %}
-  <span class="anchor-name" id="{{ category | first }}"> </span>
+  <span id="{{ category | first }}"> </span>
   <h3>{{ category | first }} <sup><span class="tag_count">({{ category | last | size }})</span></sup> </h3>  
       <ul class="arc-list">
          {% for post in category.last %}
