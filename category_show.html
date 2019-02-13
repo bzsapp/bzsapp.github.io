@@ -1,13 +1,14 @@
 ---
 layout: page
-
 ---
+
 <Script language="javascript">
 /* 
  * 获取指定的URL参数值 
  * URL:http://www.quwan.com/index?cat=tyler 
  * 参数：paramName URL参数 
  */ 
+
 function getQueryString(paramName) { 
 	  var reg = new RegExp("(^|&)" + paramName + "=([^&]*)(&|$)", "i"); 
 	  var r = window.location.search.substr(1).match(reg); 
@@ -15,12 +16,12 @@ function getQueryString(paramName) {
 }
 </Script>
 
-
-{% for post in site.categories.[page.category] %}
+{% capture catPram %} <script>document.write(getQueryString("cat"));</script> {% endcapture %}
+{% for post in site.categories.[catPram] %}
     <li>{{ post.date | date:"%Y/%m/%d"}}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 
-{% capture catPram %} <h2>shif color</h2>-> <script>document.write(getQueryString("cat"));</script>{% endcapture %}
+{% capture catPram %} url cat参数值是: <script>document.write(getQueryString("cat"));</script>{% endcapture %}
 {{catPram}}<br>
 <script>
     document.write(getQueryString("cat"));
