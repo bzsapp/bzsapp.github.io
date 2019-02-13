@@ -22,6 +22,8 @@ title: Home
              {% assign postcnt = 0 %}
              {% if yearcnt <=3 %}    <!--这里<=3要与下面3个if yearcnt == 的语句数量对应 -->
                 <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
+             {% else %}
+                {% break %}     <!-- 若year>3，则结束for循环 -->
              {% endif %}
           {% endif %}
        {% endunless %}
