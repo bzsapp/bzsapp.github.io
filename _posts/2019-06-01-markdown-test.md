@@ -1,6 +1,6 @@
 ---
 layout: post             
-title: "第十四周：课后复习、作业及预习"       # 文章标题
+title: "第十四周：markdown-test"       # 文章标题
 categories: ["python"]      # 分类
 published: true
 ---
@@ -39,6 +39,41 @@ published: true
 3. 访问并输出jc变量中索引标签为'E'的序列中的值。你能用几种方式访问所要的数据值？
 4. 获取返回jc变量中最后三本教材名称.
 5. 把jc变量中的Series索引修改为 ['A','B','C','D','E'] 。
+
+
+##### 参考答案：
+
+```
+def judge_leapyear(year):
+    """判断一个年份是否闰年.
+
+    参数：
+    year: 一个整数类型的4位年份
+
+    返回值：布尔逻辑值
+    
+    使用示例:
+    >>> judge_leapyear(2016)
+    True
+    """
+    if year%100 != 0 and year%4 == 0:
+        return True
+    else:
+        return False
+    if year%400 == 0:
+        return True
+    else:
+        return False
+
+
+if __name__ == '__main__':
+    cnt = 0
+    for n in range(2050, 2211) :
+        if judge_leapyear(n):
+            cnt += 1
+    print('闰年总数：', cnt)
+
+```
 
 <br>
 
