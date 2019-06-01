@@ -1,8 +1,9 @@
 ---
 layout: post             
 title: "第十四周：markdown-test"       # 文章标题
-categories: ["python"]      # 分类
+categories: ["markdown"]      # 分类
 published: true
+
 ---
 
 #### 复习自学要求：
