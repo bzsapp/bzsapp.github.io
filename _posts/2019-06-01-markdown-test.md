@@ -43,7 +43,7 @@ published: true
 
 ##### 参考答案：
 
-```
+```python
 def judge_leapyear(year):
     """判断一个年份是否闰年.
 
